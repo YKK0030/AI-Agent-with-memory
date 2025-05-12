@@ -17,7 +17,6 @@ def get_vector_response(question,top_k=5):
         )
     return Vector_RAG
 
-
 @tool
 def add_data_to_kg(search_result):
     """
