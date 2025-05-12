@@ -12,7 +12,7 @@ def get_vector_response(question,top_k=5):
         vector_index_name = 'Chunk',
         vector_node_label = 'Chunk',
         vector_source_property= 'text',
-        vector_embedding_property = 'textEmbeddingOpenAI',
+        vector_embedding_property = 'GoogleGenerativeAIEmbeddings',
         top_k= top_k
         )
     return Vector_RAG
