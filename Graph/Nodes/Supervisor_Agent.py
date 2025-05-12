@@ -18,7 +18,6 @@ def Supervisor(
         model=llm,
         prompt=supervisor_agent_prompt,
         output_mode=output_mode,
-      
         **compile_kwargs
     )
     return supervisor
