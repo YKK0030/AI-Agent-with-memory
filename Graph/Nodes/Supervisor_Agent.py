@@ -5,7 +5,6 @@ from langgraph_supervisor import create_supervisor
 from Config.llm import llm
 from Graph.Prompt.prompts import supervisor_agent_prompt
 
-
 def Supervisor(
     search_agent,
     knowledgeGraph_agent,
