@@ -1,5 +1,5 @@
 from neo4j_graphrag.llm.base import LLMInterface
-from google.generativeai import GenerativeModel  # from `google-generativeai` package
+from google.generativeai import GenerativeModel
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -11,4 +11,4 @@ class GeminiLLM(LLMInterface):
 
     def call(self, prompt: str) -> str:
         response = self.model.generate_content(prompt)
-        return response.text  # adjust this depending on actual return structure
+        return response.text

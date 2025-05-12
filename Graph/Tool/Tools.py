@@ -22,7 +22,6 @@ def get_vector_response(question,top_k=5):
 def add_data_to_kg(search_result):
     """
     Use this to add a Search node in Neo4j with the given input directly as text.
-
     Args:
         search_result: a string, dict, or any object. If dict, 'summary' or 'text' field is used; otherwise, serialized as JSON or string.
     """
